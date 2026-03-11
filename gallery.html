@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Daryl H. Castro</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="gallery.css"/>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <a href="index.html" class="nav-logo">Daryl H. Castro</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+    </ul>
+  </nav>
+
+  
+
+  <!-- Photo Table — 4 columns x 4 rows -->
+  <div class="table-wrapper">
+    <table class="gallery-table">
+      <tbody>
+        <div class="gallery-center layout" >
+         <h1><p style="color: cyan;">MY GALLERY</p></h1>
+        </div>
+      
+
+        <!-- Row 1 -->
+        <tr>
+          <td class="photo-cell" data-index="0">
+            <img src="picture3.jpg"  alt="Photo 1"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="1">
+            <img src="picture2.png"  alt="Photo 2"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="2">
+            <img src="picture4.jpg"  alt="Photo 3"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="3">
+            <img src="picture9.jpg"  alt="Photo 4"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+          <td class="photo-cell" data-index="4">
+            <img src="picture11.jpg" alt="Photo 5"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="5">
+            <img src="picture12.jpg" alt="Photo 6"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="6">
+            <img src="picture15.jpg" alt="Photo 7"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="7">
+            <img src="picture16.jpg" alt="Photo 8"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+          <td class="photo-cell" data-index="8">
+            <img src="picture6.jpg"  alt="Photo 9"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="9">
+            <img src="picture5.jpg"  alt="Photo 10"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="10">
+            <img src="picture7.jpg"  alt="Photo 11"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="11">
+            <img src="picture8.jpg"  alt="Photo 12"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+        </tr>
+
+        <!-- Row 4 -->
+        <tr>
+          <td class="photo-cell" data-index="12">
+            <img src="picture13.jpg" alt="Photo 13"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="13">
+            <img src="picture14.jpg" alt="Photo 14"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="14">
+            <img src="picture17.jpg" alt="Photo 15"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="15">
+            <img src="picture18.jpg" alt="Photo 16"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+        </tr>
+
+         <tr>
+          <td class="photo-cell" data-index="12">
+            <img src="picture27.jpg" alt="Photo 13"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="13">
+            <img src="picture26.jpg" alt="Photo 14"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="14">
+            <img src="picture25.jpg" alt="Photo 15"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+          <td class="photo-cell" data-index="15">
+            <img src="picture24.jpg" alt="Photo 16"/><div class="overlay"><span>&#128269;</span></div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Back button -->
+  <div class="back-wrap">
+    <a href="about.html" class="back-btn">&#8592; Back to About</a>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lb-backdrop" id="lb-backdrop"></div>
+    <div class="lb-container">
+      <button class="lb-close" id="lb-close" aria-label="Close">&#10005;</button>
+      <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous">&#8592;</button>
+      <div class="lb-img-wrapper">
+        <img id="lb-img" src="" alt=""/>
+        <div class="lb-counter" id="lb-counter"></div>
+      </div>
+      <button class="lb-nav lb-next" id="lb-next" aria-label="Next">&#8594;</button>
+    </div>
+  </div>
+
+  <script src="animation.js"></script>
+</body>
+</html>

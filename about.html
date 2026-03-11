@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daryl H. Castro - About</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="animation.css"/>
+  <style></style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Daryl H. Castro</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <h2 class="sec-heading" style="color:aqua">About Me</h2>
+    <div class="sec-rule"></div>
+
+    <table class="info-table">
+
+      <tr>
+        <td class="img-cell">
+          <img src="picture3.jpg" width="200" height="200" title="Click to expand"/>
+        </td>
+        <td class="text-cell">
+          <p class="row-title">Daryl H. Castro</p>
+          <p style="color: black;">20 years old, BSCS student.</p>
+          <p style="color: black;">Striving to become successful</p>
+        </td>
+      </tr>
+
+      <tr class="reverse">
+        <td class="img-cell">
+          <img src="picture2.png" width="200" height="200" title="Click to expand"/>
+        </td>
+        <td class="text-cell">
+          <p class="row-title">Where I live</p>
+          <p style="color: black;">PUROK-10 near the chapel</p>
+          <p style="color: black;">FILI, BAYUGAN CITY, ADS</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="img-cell">
+          <img src="picture4.jpg" width="200" height="200" title="Click to expand"/>
+        </td>
+        <td class="text-cell">
+          <p class="row-title">Event in my LIFE</p>
+          <p style="color: black;">It happened on February 26, 2026</p>
+          <p style="color: black;">Competition in REVERSE PITCHING</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="img-cell">
+          <img src="picture6.jpg" width="200" height="200" title="Click to expand"/>
+        </td>
+        <td class="text-cell">
+          <p class="row-title">My Inspiration</p>
+          <p style="color: black;">She is VAN HONEY CAILING</p>
+          <p style="color: black;">MY INSPIRATION</p>
+        </td>
+      </tr>
+
+      <tr class="reverse">
+        <td class="img-cell">
+          <img src="picture5.jpg" width="200" height="200" title="Click to expand"/>
+        </td>
+        <td class="text-cell">
+          <p class="row-title">LOVE LIFE</p>
+          <p style="color: black;">We've been together for 1 year and 3 months</p>
+          <p style="color: black;">LOVE OF MY LIFE</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="img-cell">
+          <img src="picture7.jpg" width="200" height="200" title="Click to expand"/>
+        </td>
+        <td class="text-cell">
+          <p class="row-title">MY FAMILY</p>
+          <p style="color: black;">We are a complete happy family but sometimes chaos</p>
+          <p style="color: black;">I have 4 sisters and 1 brother and I am the third son of family CASTRO</p>
+        </td>
+      </tr>
+
+    </table>
+
+    <!-- Link to Gallery -->
+    <div style="text-align:center; margin-top: 40px;">
+      <a href="gallery.html" style="
+        display: inline-block;
+        padding: 12px 32px;
+        background: #222;
+        color: #e8c97a;
+        border: 1px solid #e8c97a;
+        border-radius: 8px;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        transition: background 0.2s, color 0.2s;
+      "
+      onmouseover="this.style.background='#e8c97a';this.style.color='#000'"
+      onmouseout="this.style.background='#222';this.style.color='#e8c97a'"
+      >&#128247; View Full Gallery</a>
+    </div>
+
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="Expanded photo"/>
+  </div>
+
+  <script src="animation.js"></script>
+
+</body>
+</html>
